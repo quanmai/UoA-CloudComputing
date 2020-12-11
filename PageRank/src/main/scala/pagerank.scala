@@ -1,4 +1,10 @@
 /* pagerank.scala */
+/*
+  My implementation for PageRank in scala.
+  Reference:
+  https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/SparkPageRank.scala
+  My implementation also deals with dangling nodes (1 in this program, so yeah not generalized, kinda rush of time)
+*/
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf

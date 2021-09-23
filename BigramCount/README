@@ -1,0 +1,2 @@
+Bigram count using Hadoop MapReduce
+The number of map tasks are launched in the map stage

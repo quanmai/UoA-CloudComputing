@@ -1,0 +1,17 @@
+My implementation for PageRank using Hadoop MapReduce. The scala version could be found in ../PageRank
+
+
+1. Perform the page rank algorithm on a directed graph.
+  • The input graph is saved as one or multiple files under the folder “input”.
+  • Each node is saved as one line in a file.
+  • Run the algorithm for multiple iterations. Each iteration has two passes. The output graph of iteration i is saved as one or multiple files under the folders “output-i-1” and “output-i-2”.
+  • The program will take 4 arguments:
+    – The number of iterations of the process, such as “-i 10”.
+    – The number of reducers, such as “-r 3”.
+    – The random jump factor, such as “-a 0.1”. – The number of nodes, such as “-n 5”.
+    
+2. A node is saved as a string in a file such as “node ID node description”.
+  • The node ID and node description are delimited by one or more whitespace characters. 
+  • Node description is of the following format, “edges|page rank mass”.
+    – “edges” actually is the adjacency list representing the list of reachable nodes delimited by “,” such as “2,3,5,18”. Dangling nodes have “NULL” edges.
+    – “page rank mass” represents the page rank mass of a node such as “0.2”.
